@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Greeting Cards &amp; Gift POS</title>
+    <meta name="description" content="Professional retail point-of-sale system for greeting cards, stationery, gift wrap, and novelty gifts with quick 50% discount toggles, card price code buttons, barcode scanning, and receipt printing." />
+    <meta property="og:title" content="Greeting Cards &amp; Gift POS" />
+    <meta property="og:description" content="Professional retail point-of-sale system for greeting cards, stationery, gift wrap, and novelty gifts with quick 50% discount toggles, card price code buttons, barcode scanning, and receipt printing." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- POS receipt printing styles -->
+    <style>
+      @media print {
+        body * {
+          visibility: hidden !important;
+        }
+        #printable-receipt, #printable-receipt * {
+          visibility: visible !important;
+        }
+        #printable-receipt {
+          position: absolute !important;
+          left: 0 !important;
+          top: 0 !important;
+          width: 80mm !important;
+          margin: 0 !important;
+          padding: 10px !important;
+          background: white !important;
+          color: black !important;
+          font-family: 'Courier New', Courier, monospace !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[#1e1e2d] text-white overflow-hidden select-none antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

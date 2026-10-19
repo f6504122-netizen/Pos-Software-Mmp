@@ -1,0 +1,6 @@
+{
+  "name": "Greeting Cards & Gift POS",
+  "description": "Professional retail point-of-sale system for greeting cards, stationery, gift wrap, and novelty gifts with quick 50% discount toggles, card price code buttons, barcode scanning, and receipt printing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
